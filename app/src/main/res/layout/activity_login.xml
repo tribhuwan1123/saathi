@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context=".login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/saathif" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/my_shape"
+        android:hint="USERNAME" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:background="@drawable/my_shape"
+        android:hint="PASSWORD" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_shape"
+        android:layout_centerInParent="true"
+        android:text="LOGIN"
+        android:id="@+id/login"
+        android:layout_below="@+id/password"/>
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/facebookLogin"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create"
+        android:layout_below="@+id/facebookLogin"
+        android:text="Do Not Have An Account?"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SignUp"
+        android:layout_below="@id/create"
+        android:layout_centerInParent="true"
+        android:textColor="@color/silver"
+        android:text="Sign Up"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

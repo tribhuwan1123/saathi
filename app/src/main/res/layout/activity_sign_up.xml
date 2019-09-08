@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:layout_height="match_parent"
+    tools:context=".signUp.SignUp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:fontFamily="cursive"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:textStyle="italic"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Email"
+            android:id="@+id/sEmail"
+            android:inputType="textEmailAddress"
+            android:layout_margin="8dp"
+            android:background="@drawable/my_shape"
+            android:textColor="@color/white"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword"
+            android:layout_below="@+id/sEmail"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_shape"
+            android:id="@+id/sPassword"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:background="@drawable/my_shape"
+        android:text="REGISTER"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/sPassword"/>
+    </RelativeLayout>
+
+</RelativeLayout>
